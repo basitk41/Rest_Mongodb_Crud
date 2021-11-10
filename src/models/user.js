@@ -5,5 +5,4 @@ const userSchema = new mongoose.Schema({
   job_title: { type: String, required: true },
 });
 
-const User = mongoose.model("User", userSchema);
-exports.User = User;
+exports.User = mongoose.model("User", userSchema);
